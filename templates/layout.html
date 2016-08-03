@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>FlaskStack</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='semanticui/semantic.min.css')}}" />
+    </head>
+    <body>
+
+
+        {% block body %}{% endblock %}
+
+
+
+
+
+        <!-- JAVASCRIPTS -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.0.0.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='semanticui/semantic.min.js')}}"></script>
+
+        {% block js %}{% endblock %}
+
+    </body>
+</html>
